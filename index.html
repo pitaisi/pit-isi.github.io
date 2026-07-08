@@ -46,8 +46,7 @@ function resize() {
 
     ctx.setTransform(dpr,0,0,dpr,0,0);
 
-    fontSize = Math.min(innerWidth * 0.06, innerHeight * 0.12);
-    if(fontSize < 26) fontSize = 26;
+    fontSize = innerWidth * 0.06;
 
     buildTextMask();
 }
